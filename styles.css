@@ -1,0 +1,103 @@
+/* Estilos generales */
+body {
+    font-family: sans-serif;
+    margin: 0;
+  }
+  
+  /* Estilos de la barra lateral */
+  #sidebar {
+    position: fixed; /* Barra lateral fija */
+    top: 0;
+    left: 0;
+    width: 250px; /* Ancho de la barra lateral */
+    height: 100%;
+    background-color: #f0f0f0; /* Color de fondo */
+  }
+  
+  #sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #sidebar li a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  #sidebar li a:hover {
+    background-color: #ddd;
+  }
+  
+  /* Estilos del contenido principal */
+  #content {
+    margin-left: 250px; /* Espacio para la barra lateral */
+    padding: 20px;
+  }
+/* ... (los mismos estilos que te proporcioné antes) ... */
+
+/* Estilos para los menús desplegables */
+.dropdown:hover .submenu {
+    display: block;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    left: 100%; /* Posicionar a la derecha del elemento padre */
+    top: 0;
+    background-color: #f0f0f0;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1; /* Asegurar que el submenú esté por encima de otros elementos */
+}
+/* ... (los mismos estilos que antes) ... */
+
+/* Estilos para los menús desplegables */
+.dropdown .submenu {
+    display: none; /* Ocultar por defecto */
+    position: static; /* Posición normal en el flujo del documento */
+    width: 100%; /* Ocupar todo el ancho del elemento padre */
+}
+/* ... (estilos anteriores) ... */
+
+/* Estilos para los formularios */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    background-color: #4CAF50; /* Color verde */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Estilos para la lista de resultados de búsqueda */
+#resultados_busqueda {
+    list-style: none;
+    padding: 0;
+}
+
+#resultados_busqueda li {
+    margin-bottom: 10px;
+}
+  
